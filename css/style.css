@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rancho&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sriracha&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* custom scroll bar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+body {
+  background: url(https://images.unsplash.com/photo-1519385091642-02e6b22ed4e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1569&q=80);
+  background-size: cover;
+  font-family: "Poppins", sans-serif;
+}
+.box {
+  border: 1px solid none;
+  width: 80%;
+  height: auto;
+  margin: 0 10%;
+  position: absolute;
+}
+.firstbar {
+  width: 80.4vw;
+  background: url(https://images.unsplash.com/photo-1536532184021-da5392b55da1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
+  background-size: 100% 100%;
+  
+}
+.firstbar .logo {
+  border-radius: 50%;
+  width: 134px;
+  height: 134px;
+  margin-left: 45%;
+  margin-top: 7px;
+  margin-bottom: 3px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  border: 4px solid rgb(255, 255, 255);
+}
+/* .socialmedia{
+    position: absolute;
+    top: 40%;
+    left: 90%;
+    word-spacing: 6px;
+} */
+.list {
+  border: 1px solid #000;
+  width: 98%;
+  padding: 10px;
+  position: absolute;
+  background-color: #000;
+  color: #fff;
+  border-bottom: 4px solid rgb(255, 0, 0);
+}
+.list ul li {
+  float: left;
+  width: 80px;
+  text-align: center;
+  padding: 8px;
+  list-style: none;
+  cursor: pointer;
+}
+.list ul li a {
+  transition: all 0.4s;
+  color: #fff;
+  text-decoration: none;
+}
+.list ul li a:hover {
+  color: crimson;
+}
+.list form input {
+  border: none;
+  outline: none;
+  position: absolute;
+  left: 79%;
+  top: 22%;
+  border-radius: 4px;
+  padding: 9px 9px;
+  background: #444;
+  color: #fff;
+  font-family: poppins;
+  transition: all 0.3s ease;
+}
+::placeholder {
+  font-family: poppins;
+}
+/* }
+.subscribe {
+  width: 98%;
+  padding: 10px;
+  position: absolute;
+  margin: 60px 0%;
+  background: rgb(215, 215, 215);
+}
+.subscribe h2 {
+  margin: 0 25px;
+  padding: 2px;
+  color: #333;
+  text-decoration: none;
+}
+.subscribe a {
+  text-decoration: none !important;
+} */
+
+.content {
+  background-color: #fff;
+  border: 1px solid none;
+  width: 98.1%;
+  height: auto;
+  padding: 10px;
+  margin: 64px 0%;
+  position: absolute;
+}
+.blog1title{
+    text-align: center;
+}
+select{
+  transition:all 0.4s  linear;
+  width: 40vw;
+  outline: none;
+  border: none;
+  padding: 10px 0;
+  font-family: poppins;
+  display: none;
+  background: #444;
+  color: #fff;
+}
+/* responsive part */
+@media (max-width:1200px) {
+  .list form input{
+    left: 70%;
+  }
+  .list{
+    width: 97.5%;
+  }
+}
+@media (max-width:960px){
+  .list ul li{
+    display: none;
+  }
+  select{
+    display: block;
+  }
+  .content{
+    width: 97%;
+  }
+}
+@media (max-width:829px){
+  .list form input{
+    margin-left: -10%;
+  }
+  .list{
+    width: 96.5%;
+  }
+  select{
+    width: 32vw;
+  }
+  .firstbar .logo {
+    margin-left: 35%;
+  }
+}
+@media (max-width:639px){
+  select{
+    width: 77vw;
+    padding-bottom: 10px;
+  }
+  .list form input{
+    margin-left:-68%;
+    margin-top: 7vh;
+    width: 77vw;
+  }
+  .list{
+    height: 15vh;
+  }
+  .content {
+    margin: 19.2vh 0%;
+  }
+}
+@media (max-width:639px){
+  .firstbar{
+    width: 82.8vw;
+  }
+}
+@media (max-width:379px){
+  .firstbar .logo {
+    margin-left: 20%;
+  }
+  .list form input{
+    margin-left: -66%;
+  }
+}
